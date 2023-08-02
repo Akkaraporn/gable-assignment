@@ -7,9 +7,9 @@ import java.util.Date;
 @Data
 public class RequestDTO {
     private Long id;
-    private String customerId;
-    private String requesterId;
-    private String managerId;
+    private Long customerId;
+    private Long requesterId;
+    private Long managerId;
     private String title;
     private String detail;
     private String status;

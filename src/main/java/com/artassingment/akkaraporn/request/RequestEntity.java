@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "Request")
+@Table(name = "Requests")
 public class RequestEntity {
     public enum Status {
         Draft,
@@ -21,16 +21,18 @@ public class RequestEntity {
         Rejected_By_Manager
     }
     @Id
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Long Id;
 
     @Column(name = "CustomerId")
-    private String customerId;
+    private Long customerId;
 
     @Column(name = "requester_id")
-    private String requesterId;
+    private Long requesterId;
 
     @Column(name = "manager_id")
-    private String managerId;
+    private Long managerId;
 
     @Column(name = "title")
     private String title;

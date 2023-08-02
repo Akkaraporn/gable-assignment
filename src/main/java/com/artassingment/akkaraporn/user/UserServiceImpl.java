@@ -26,7 +26,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO createUser(UserDTO userDTO) {
-        return null;
+        UserEntity userEntity = new UserEntity();
+        userEntity.setFistName(userDTO.getFirstname());
+        userEntity.setLastName(userDTO.getLastname());
+        userEntity.setRole(userDTO.getRole());
+        userRepository.save(userEntity);
+        return userDTO;
     }
 
 }

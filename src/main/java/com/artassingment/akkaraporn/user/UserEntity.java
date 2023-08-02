@@ -14,7 +14,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "User")
+@Table(name = "user")
 public class UserEntity{
 
     @Id
@@ -27,15 +27,15 @@ public class UserEntity{
     @Column(name = "password")
     private String password;
 
-    @Column(name = "first_name")
+    @Column(name = "firstname")
     private String fistName;
 
-    @Column(name = "last_name")
+    @Column(name = "lastname")
     private String lastName;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private String role;
+
 
     @Column(name = "CreatedDate")
     @Temporal(TemporalType.TIMESTAMP)
