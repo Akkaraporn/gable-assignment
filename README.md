@@ -12,7 +12,7 @@ Building Microservices Application Using Spring Boot
 
 **Database Username:** user
 
-**Database Username Password:** Pass
+**Database Username Password:** pass
 
 ## Service
 
